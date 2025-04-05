@@ -69,6 +69,24 @@ body {
     object-fit: cover;
     opacity: 0.85;
     mix-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Animación de las imágenes */
+.fade-image {
+    opacity: 0;
+}
+
+.fade-image[data-index="1"] {
+    opacity: 0.85;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    25%, 75% { opacity: 0.85; }
 }
 
 /* Ajuste del contenedor de texto */

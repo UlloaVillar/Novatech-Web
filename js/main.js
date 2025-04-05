@@ -114,4 +114,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Activar el primer tab por defecto
     activateTab('it');
+});
+
+// Rotación de imágenes del hero
+function rotateHeroImages() {
+    const images = document.querySelectorAll('.fade-image');
+    let currentIndex = 1;
+    const totalImages = images.length;
+
+    setInterval(() => {
+        images.forEach(img => {
+            img.style.opacity = '0';
+        });
+        
+        const nextImage = document.querySelector(`.fade-image[data-index="${currentIndex}"]`);
+        if (nextImage) {
+            nextImage.style.opacity = '0.85';
+        }
+        
+        currentIndex = currentIndex >= totalImages ? 1 : currentIndex + 1;
+    }, 3500); // Cambia cada 3.5 segundos
+}
+
+// Iniciar la rotación cuando el documento esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    rotateHeroImages();
 }); 
