@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
 
-    function activateTab(tabName) {
-        // Desactivar todos los tabs
+    function activateTab(tabId) {
+        // Desactivar todas las tabs
         tabButtons.forEach(button => {
             button.classList.remove('active', 'text-primary-blue');
             button.classList.add('text-gray-500');
@@ -80,40 +80,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 indicator.style.transform = 'scaleX(0)';
             }
         });
-
+        
         // Ocultar todos los contenidos
-        tabContents.forEach(content => {
+        document.querySelectorAll('.tab-content').forEach(content => {
             content.classList.add('hidden');
             content.classList.remove('active');
         });
+        
+        // Activar la tab seleccionada
+        const selectedButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+        const selectedContent = document.querySelector(`.tab-content[data-tab="${tabId}"]`);
 
-        // Activar el tab seleccionado
-        const activeButton = document.querySelector(`[data-tab="${tabName}"]`);
-        const activeContent = document.querySelector(`.tab-content[data-tab="${tabName}"]`);
-
-        if (activeButton && activeContent) {
-            activeButton.classList.add('active', 'text-primary-blue');
-            activeButton.classList.remove('text-gray-500');
-            const indicator = activeButton.querySelector('.active-indicator');
+        if (selectedButton) {
+            selectedButton.classList.add('active', 'text-primary-blue');
+            selectedButton.classList.remove('text-gray-500');
+            const indicator = selectedButton.querySelector('.active-indicator');
             if (indicator) {
                 indicator.style.transform = 'scaleX(1)';
             }
-            
-            activeContent.classList.remove('hidden');
-            activeContent.classList.add('active');
+        }
+        
+        if (selectedContent) {
+            selectedContent.classList.remove('hidden');
+            selectedContent.classList.add('active');
         }
     }
 
-    // Event listeners para los tabs
+    // Añadir event listeners a todos los botones de tab
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const tabName = button.getAttribute('data-tab');
-            activateTab(tabName);
+            const tabId = button.getAttribute('data-tab');
+            activateTab(tabId);
         });
     });
 
-    // Activar el primer tab por defecto
-    activateTab('it');
+    // Activar la primera tab por defecto
+    activateTab('asistentes');
 });
 
 // Rotación de imágenes del hero

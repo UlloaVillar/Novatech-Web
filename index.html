@@ -54,9 +54,11 @@
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <div class="flex items-center space-x-8">
-                        <a href="#quienes-somos" class="nav-link text-white hover:text-white/80 transition-colors">Quienes somos</a>
-                        <a href="#servicios" class="nav-link text-white hover:text-white/80 transition-colors">Servicios</a>
-                        <a href="#trabajos" class="nav-link text-white hover:text-white/80 transition-colors">Trabajos</a>
+                        <a href="#excels" class="nav-link text-white hover:text-white/80 transition-colors">Excels</a>
+                        <a href="#emails" class="nav-link text-white hover:text-white/80 transition-colors">Emails</a>
+                        <a href="#facturas" class="nav-link text-white hover:text-white/80 transition-colors">Facturas</a>
+                        <a href="#informes" class="nav-link text-white hover:text-white/80 transition-colors">Informes</a>
+                        <a href="#cotizaciones" class="nav-link text-white hover:text-white/80 transition-colors">Cotizaciones</a>
                     </div>
                     <a href="#contacto" class="nav-button bg-white text-[rgb(76,46,213)] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors">Contactar</a>
                 </div>
@@ -155,28 +157,24 @@
             <!-- Tabs Navigation -->
             <div class="flex flex-wrap justify-center mb-12 relative">
                 <div class="flex space-x-8 border-b border-gray-200 w-full justify-center">
-                    <button class="tab-button active py-4 px-4 text-lg font-medium relative text-primary-blue" data-tab="it">
-                        IT
+                    <button class="tab-button active py-4 px-4 text-lg font-medium relative text-primary-blue" data-tab="asistentes">
+                        Asistentes IA
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
-                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="operaciones">
-                        Operaciones
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="emails">
+                        Emails
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
-                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="marketing">
-                        Marketing
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="excels">
+                        Excels
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
-                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="ventas">
-                        Ventas
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="informes">
+                        Informes
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
-                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="finanzas">
-                        Finanzas
-                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
-                    </button>
-                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="cx">
-                        Customer Experience
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="cotizaciones">
+                        Cotizaciones
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
                 </div>
@@ -184,191 +182,188 @@
 
             <!-- Tab Content -->
             <div class="tab-content-container max-w-6xl mx-auto px-4">
-                <!-- IT Content -->
-                <div class="tab-content active grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="it">
+                <!-- Asistentes IA -->
+                <div class="tab-content grid grid-cols-1 md:grid-cols-2 gap-16 items-center hidden" data-tab="asistentes">
                     <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">Automatización de TI</h3>
-                        <p class="text-gray-600 text-lg">Optimiza tus procesos de TI y reduce el tiempo dedicado a tareas repetitivas. Nuestras soluciones te permiten enfocarte en lo que realmente importa.</p>
+                        <h3 class="text-3xl font-bold">🤖 Asistentes IA</h3>
+                        <p class="text-gray-600 text-lg">Creamos asistentes que entienden tu negocio y ayudan a tu equipo a responder dudas, encontrar información o ejecutar tareas del día a día.</p>
                         <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Gestión de tickets y incidencias automatizada</span>
+                                <span class="text-gray-700">Responden preguntas sobre stock, precios, condiciones o entregas</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Despliegues y actualizaciones sin errores</span>
+                                <span class="text-gray-700">Buscan datos o documentos sin que tengas que abrir 10 carpetas</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Monitorización y alertas en tiempo real</span>
+                                <span class="text-gray-700">Generan emails, presupuestos o informes de forma automática</span>
                             </li>
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="images/it-automation.jpg" alt="IT Automation" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
+                        <img src="images/asistentes-ia.jpg" alt="Asistentes IA" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
                     </div>
                 </div>
 
-                <!-- Operaciones Content -->
-                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="operaciones">
+                <!-- Emails automáticos -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="emails">
                     <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">Optimización de Operaciones</h3>
-                        <p class="text-gray-600 text-lg">Mejora la eficiencia operativa de tu empresa con soluciones inteligentes que automatizan los procesos más críticos del día a día.</p>
+                        <h3 class="text-3xl font-bold">✉️ Emails automáticos</h3>
+                        <p class="text-gray-600 text-lg">Respondemos a correos frecuentes de forma inteligente, sin perder el contexto del cliente y sin tener que escribir todo desde cero.</p>
                         <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Automatización de procesos logísticos end-to-end</span>
+                                <span class="text-gray-700">Historial completo de cada cliente con sus datos y peticiones</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Control de inventario predictivo</span>
+                                <span class="text-gray-700">Envíos automáticos con textos claros, incluso en varios idiomas</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Gestión inteligente de la cadena de suministro</span>
+                                <span class="text-gray-700">Añadimos archivos como catálogos o presupuestos según el caso</span>
                             </li>
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="images/operations-automation.jpg" alt="Operations Automation" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
+                        <img src="images/emails.jpg" alt="Emails Automáticos" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
                     </div>
                 </div>
 
-                <!-- Marketing Content -->
-                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="marketing">
+                <!-- Excels -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="excels">
                     <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">Marketing Digital Automatizado</h3>
-                        <p class="text-gray-600 text-lg">Maximiza el impacto de tus campañas de marketing con automatizaciones inteligentes que aumentan el engagement y las conversiones.</p>
+                        <h3 class="text-3xl font-bold">📊 Asistentes para Excel</h3>
+                        <p class="text-gray-600 text-lg">Transformamos tus hojas de cálculo en herramientas que responden dudas y generan simulaciones sin que te líes con fórmulas.</p>
                         <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Campañas de email marketing personalizadas</span>
+                                <span class="text-gray-700">Pregunta qué producto da más margen o qué cliente compra más</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Gestión automatizada de redes sociales</span>
+                                <span class="text-gray-700">Corre simulaciones tipo "¿y si subo precios un 10%?"</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Análisis y reportes en tiempo real</span>
+                                <span class="text-gray-700">Te ayudamos a generar fórmulas sin romperte la cabeza</span>
                             </li>
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="images/marketing-automation.jpg" alt="Marketing Automation" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
+                        <img src="images/excels.jpg" alt="Excel Assistant" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
                     </div>
                 </div>
 
-                <!-- Ventas Content -->
-                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="ventas">
+                <!-- Informes -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="informes">
                     <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">Automatización de Ventas</h3>
-                        <p class="text-gray-600 text-lg">Potencia tu equipo de ventas con herramientas inteligentes que automatizan las tareas repetitivas y maximizan las conversiones.</p>
+                        <h3 class="text-3xl font-bold">�� Informes automáticos</h3>
+                        <p class="text-gray-600 text-lg">Te entregamos informes listos cada semana o cada mes, sin que nadie tenga que abrir el Excel, limpiar datos ni calcular KPIs a mano.</p>
                         <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">CRM inteligente con seguimiento automático</span>
+                                <span class="text-gray-700">Procesamos tus datos y generamos los cálculos automáticamente</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Cualificación automática de leads</span>
+                                <span class="text-gray-700">Informes claros, listos para tomar decisiones o compartir</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Generación de propuestas personalizadas</span>
+                                <span class="text-gray-700">Ahorro de horas mensuales y eliminación de errores humanos</span>
                             </li>
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="images/sales-automation.jpg" alt="Sales Automation" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
+                        <img src="images/informes.jpg" alt="Informes Automáticos" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
                     </div>
                 </div>
 
-                <!-- Finanzas Content -->
-                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="finanzas">
+                <!-- Cotizaciones -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="cotizaciones">
                     <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">Automatización Financiera</h3>
-                        <p class="text-gray-600 text-lg">Simplifica tus procesos financieros y contables con soluciones que automatizan las tareas más complejas y reducen errores.</p>
+                        <h3 class="text-3xl font-bold">🧾 Cotizaciones desde planos o PDFs</h3>
+                        <p class="text-gray-600 text-lg">Automatizamos el cálculo a partir de planos, catálogos o PDFs. Te damos una propuesta inicial de precio lista para revisar o enviar.</p>
                         <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Facturación y cobros automatizados</span>
+                                <span class="text-gray-700">Extraemos medidas, cantidades o materiales automáticamente</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Control de gastos inteligente</span>
+                                <span class="text-gray-700">Calculamos coste, margen y propuesta base con tus precios</span>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Reportes financieros automatizados</span>
+                                <span class="text-gray-700">Ahorra horas de cotización y gana precisión</span>
                             </li>
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="images/finance-automation.jpg" alt="Finance Automation" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
+                        <img src="images/cotizaciones.jpg" alt="Cotizaciones Automáticas" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Customer Experience Content -->
-                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="cx">
-                    <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">Experiencia del Cliente</h3>
-                        <p class="text-gray-600 text-lg">Mejora la satisfacción de tus clientes con soluciones automatizadas que proporcionan atención personalizada 24/7.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Chatbots con IA para soporte 24/7</span>
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Gestión automatizada de tickets</span>
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 text-primary-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Encuestas y feedback automatizado</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="order-1 md:order-2">
-                        <img src="images/cx-automation.jpg" alt="Customer Experience Automation" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
-                    </div>
+    <!-- CTA Section -->
+    <section class="relative overflow-hidden">
+        <div class="bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)]">
+            <div class="container mx-auto px-4 py-20 text-center text-white relative z-10">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">📞 ¿Te imaginas tener un asistente que trabaje 24/7 por ti?</h2>
+                    <p class="text-xl mb-8 text-white/90">
+                        Escríbenos y vemos qué podemos automatizar ya.
+                    </p>
+                    <a href="#contacto" class="inline-flex items-center bg-white text-[rgb(76,46,213)] px-8 py-4 rounded-lg text-lg hover:bg-white/90 transition-colors">
+                        Contactar ahora
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
                 </div>
+            </div>
+            <!-- Efecto de partículas similar al hero -->
+            <div class="particles absolute inset-0">
+                <div class="particle" style="left: 20%; top: 30%"></div>
+                <div class="particle" style="left: 80%; top: 20%"></div>
+                <div class="particle" style="left: 40%; top: 60%"></div>
+                <div class="particle" style="left: 60%; top: 40%"></div>
+                <div class="particle" style="left: 30%; top: 70%"></div>
             </div>
         </div>
     </section>
@@ -427,11 +422,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             new Typed('#typed', {
                 strings: [
+                    'excels 📊',
                     'emails ✉️',
                     'facturas 📄',
-                    'excels 📊',
-                    'traducciones 🌍',
-                    'procesos 🔄'
+                    'informes 📑',
+                    'cotizaciones 💰'
                 ],
                 typeSpeed: 50,
                 backSpeed: 30,
