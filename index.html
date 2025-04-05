@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novatech - Expertos en desarrollo web y soluciones con IA. Transformamos ideas en negocios digitales exitosos.">
+    <meta name="keywords" content="desarrollo web, inteligencia artificial, automatización, GPTs, desarrollo de software, agencia digital">
+    <title>Novatech | Agencia de Desarrollo Web e IA</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': 'rgb(76, 46, 213)', // Color más azulado
+                        'primary-purple': 'rgb(133, 40, 230)', // Color más morado
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Preload de imágenes críticas -->
+    <link rel="preload" as="image" href="images/logo.png">
+</head>
+<body class="bg-white">
+    <div class="bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)]">
+        <!-- Header -->
+        <header class="fixed w-full z-50">
+            <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+                <a href="/" class="flex items-center" aria-label="Novatech - Inicio">
+                    <img src="images/logo.png" alt="Novatech Logo" class="h-8">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="flex items-center space-x-8">
+                        <a href="#quienes-somos" class="text-white hover:text-white/80 transition-colors">Quienes somos</a>
+                        <a href="#servicios" class="text-white hover:text-white/80 transition-colors">Servicios</a>
+                        <a href="#trabajos" class="text-white hover:text-white/80 transition-colors">Trabajos</a>
+                    </div>
+                    <a href="#contacto" class="bg-white text-[rgb(76,46,213)] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors">Contactar</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="pt-36 pb-20 text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        Desarrollamos productos y servicios digitales a medida
+                    </h1>
+                    <p class="text-xl text-white/90 mb-8">
+                        Ayudamos a empresas y startups a transformar sus ideas en negocios
+                    </p>
+                    <a href="#contacto" class="bg-white text-[rgb(76,46,213)] px-8 py-4 rounded-lg text-lg hover:bg-white/90 transition-colors inline-block">
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Desarrollo Web -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-6 text-primary">
+                        <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 19l7-7-7-7m-7 7h14"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Desarrollo web a medida</h3>
+                    <p class="text-gray-600">
+                        Creamos potentes plataformas web que se adaptan a las necesidades de tu negocio y tus clientes
+                    </p>
+                </div>
+
+                <!-- Soluciones IA -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-6 text-primary">
+                        <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Soluciones con IA</h3>
+                    <p class="text-gray-600">
+                        Expertos en GPTs, visión por computador, imagen generativa y modelos de predicción
+                    </p>
+                </div>
+
+                <!-- Producto Propio -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-6 text-primary">
+                        <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Producto propio</h3>
+                    <p class="text-gray-600">
+                        Transformamos tu idea en realidad para que consigas tus primeros clientes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trabajos Section -->
+    <section id="trabajos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">ALGUNOS DE NUESTROS TRABAJOS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- AlterMind -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <img src="images/altermind-logo.png" alt="AlterMind Logo" class="h-12 mb-6">
+                </div>
+                <!-- Robin -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <img src="images/robin-logo.png" alt="Robin Logo" class="h-12 mb-6">
+                </div>
+                <!-- Melaris -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <img src="images/melaris-logo.png" alt="Melaris Logo" class="h-12 mb-6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Contacta con nosotros</h2>
+            <p class="text-xl mb-8">Queremos trabajar contigo</p>
+            <div id="tally-form" class="max-w-2xl mx-auto">
+                <!-- Aquí irá el formulario de Tally -->
+                <a href="#" class="bg-white text-primary px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors inline-block">
+                    Contactar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <img src="images/logo.png" alt="Novatech Logo" class="h-8 mb-4">
+                    <p class="text-gray-600">
+                        Creamos y desarrollamos cualquier tipo de solución tecnológica para tu negocio.
+                    </p>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="/privacy-policy" class="text-gray-600 hover:text-primary transition-colors">Privacy Policy</a>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-600 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="text-gray-600 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="text-gray-600 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

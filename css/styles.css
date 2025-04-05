@@ -1,0 +1,56 @@
+/* Estilos personalizados */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Variables de color */
+:root {
+    --color-primary-blue: rgb(76, 46, 213);
+    --color-primary-purple: rgb(133, 40, 230);
+    --color-white: #FFFFFF;
+}
+
+/* Aplicar fuente Inter a todo el sitio */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Animaciones suaves */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Mejoras de accesibilidad */
+:focus {
+    outline: 2px solid var(--color-primary-purple);
+    outline-offset: 2px;
+}
+
+/* Gradientes personalizados */
+.gradient-primary {
+    background: linear-gradient(to bottom right, var(--color-primary-blue), var(--color-primary-purple));
+}
+
+/* Optimizaciones para móvil */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Mejoras de rendimiento para imágenes */
+img {
+    text-rendering: optimizeSpeed;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Efectos hover personalizados */
+.hover-effect {
+    transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(76, 46, 213, 0.1);
+} 
