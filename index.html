@@ -35,18 +35,18 @@
     <div class="bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)] animated-gradient">
         <div class="network-lines"></div>
         <!-- Header -->
-        <header class="fixed w-full z-50">
+        <header class="fixed w-full z-50 transition-all duration-300">
             <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
                 <a href="/" class="flex items-center" aria-label="Novatech - Inicio">
                     <img src="images/logo.png" alt="Novatech Logo" class="h-8">
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <div class="flex items-center space-x-8">
-                        <a href="#quienes-somos" class="text-white hover:text-white/80 transition-colors">Quienes somos</a>
-                        <a href="#servicios" class="text-white hover:text-white/80 transition-colors">Servicios</a>
-                        <a href="#trabajos" class="text-white hover:text-white/80 transition-colors">Trabajos</a>
+                        <a href="#quienes-somos" class="nav-link text-white hover:text-white/80 transition-colors">Quienes somos</a>
+                        <a href="#servicios" class="nav-link text-white hover:text-white/80 transition-colors">Servicios</a>
+                        <a href="#trabajos" class="nav-link text-white hover:text-white/80 transition-colors">Trabajos</a>
                     </div>
-                    <a href="#contacto" class="bg-white text-[rgb(76,46,213)] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors">Contactar</a>
+                    <a href="#contacto" class="nav-button bg-white text-[rgb(76,46,213)] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors">Contactar</a>
                 </div>
             </nav>
         </header>
@@ -76,6 +76,7 @@
     <!-- Servicios Section -->
     <section id="servicios" class="py-20">
         <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">IMAGINA UN FUTURO MÁS PRODUCTIVO</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- Desarrollo Web -->
                 <div class="text-center p-6">
