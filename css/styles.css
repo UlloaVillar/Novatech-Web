@@ -33,10 +33,48 @@ body {
     display: inline-block;
 }
 
-/* Header simple con gradiente */
+/* Header con gradiente base */
 .animated-gradient {
     position: relative;
     background: linear-gradient(125deg, var(--color-primary-blue), var(--color-primary-purple));
+    overflow: hidden;
+}
+
+/* Efecto de imagen con opacidad gradual */
+.hero-image-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 40%,
+        black 60%,
+        black 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 40%,
+        black 60%,
+        black 100%
+    );
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    mix-blend-mode: soft-light;
+}
+
+/* Ajuste del contenedor de texto */
+.hero-section .container {
+    max-width: 50%;
+    padding-right: 2rem;
 }
 
 /* Grid animado */

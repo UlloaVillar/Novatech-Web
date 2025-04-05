@@ -64,9 +64,22 @@
         </header>
 
         <!-- Hero Section -->
-        <section class="pt-36 pb-20 text-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
+        <section class="pt-36 pb-20 text-white relative overflow-hidden">
+            <!-- Gradiente base -->
+            <div class="absolute inset-0 bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)]"></div>
+            
+            <!-- Imagen con efecto de opacidad -->
+            <div class="hero-image-wrapper">
+                <img 
+                    src="images/hero-1.png" 
+                    alt="Automatización" 
+                    class="hero-image"
+                >
+            </div>
+
+            <!-- Contenido -->
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl">
                     <h1 class="text-5xl md:text-6xl font-bold mb-6">
                         Automatizamos <br/>
                         <span class="inline-block">
@@ -74,7 +87,7 @@
                         </span><br/>
                         para tu empresa
                     </h1>
-                    <p class="text-xl text-white/90 mb-8">
+                    <p class="text-xl text-white/90 mb-8 max-w-lg">
                         Ahorra tiempo, reduce errores y mejora tus procesos con soluciones prácticas de inteligencia artificial adaptadas a tu negocio.
                     </p>
                     <a href="#contacto" class="bg-white text-[rgb(76,46,213)] px-8 py-4 rounded-lg text-lg hover:bg-white/90 transition-colors inline-block">
