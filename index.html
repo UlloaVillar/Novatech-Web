@@ -123,19 +123,227 @@
     <!-- Trabajos Section -->
     <section id="trabajos" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">ALGUNOS DE NUESTROS TRABAJOS</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- AlterMind -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <img src="images/altermind-logo.png" alt="AlterMind Logo" class="h-12 mb-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Acelera la innovación en tu negocio</h2>
+            <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+                Mejora la eficiencia, resuelve problemas y acelera la innovación eliminando barreras en tu empresa
+            </p>
+            
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center mb-12 relative">
+                <div class="flex space-x-8 border-b border-gray-200 w-full justify-center">
+                    <button class="tab-button active py-4 px-4 text-lg font-medium relative text-primary-blue" data-tab="it">
+                        IT
+                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
+                    </button>
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="operaciones">
+                        Operaciones
+                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
+                    </button>
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="marketing">
+                        Marketing
+                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
+                    </button>
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="ventas">
+                        Ventas
+                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
+                    </button>
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="finanzas">
+                        Finanzas
+                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
+                    </button>
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="cx">
+                        Customer Experience
+                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
+                    </button>
                 </div>
-                <!-- Robin -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <img src="images/robin-logo.png" alt="Robin Logo" class="h-12 mb-6">
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content-container">
+                <!-- IT Content -->
+                <div class="tab-content active grid grid-cols-1 md:grid-cols-2 gap-8 items-center" data-tab="it">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-6">Automatización de TI</h3>
+                        <p class="text-gray-600 mb-6">Optimiza tus procesos de TI automatizando:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Gestión de tickets y incidencias
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Despliegues y actualizaciones
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Monitorización y alertas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/it-automation.jpg" alt="IT Automation" class="rounded-lg shadow-lg">
+                    </div>
                 </div>
-                <!-- Melaris -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <img src="images/melaris-logo.png" alt="Melaris Logo" class="h-12 mb-6">
+
+                <!-- Operaciones Content -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center" data-tab="operaciones">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-6">Optimización de Operaciones</h3>
+                        <p class="text-gray-600 mb-6">Mejora la eficiencia operativa con:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Automatización de procesos logísticos
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Control de inventario en tiempo real
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Gestión de la cadena de suministro
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/operations-automation.jpg" alt="Operations Automation" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Marketing Content -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center" data-tab="marketing">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-6">Marketing Digital Automatizado</h3>
+                        <p class="text-gray-600 mb-6">Potencia tu marketing con:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Automatización de campañas email
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Gestión de redes sociales
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Análisis de datos y reportes
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/marketing-automation.jpg" alt="Marketing Automation" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Ventas Content -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center" data-tab="ventas">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-6">Automatización de Ventas</h3>
+                        <p class="text-gray-600 mb-6">Impulsa tus ventas con:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                CRM automatizado
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Seguimiento de leads
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Propuestas automáticas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/sales-automation.jpg" alt="Sales Automation" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Finanzas Content -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center" data-tab="finanzas">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-6">Automatización Financiera</h3>
+                        <p class="text-gray-600 mb-6">Optimiza tus finanzas con:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Facturación automática
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Gestión de gastos
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Reportes financieros
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/finance-automation.jpg" alt="Finance Automation" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Customer Experience Content -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center" data-tab="cx">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-6">Experiencia del Cliente</h3>
+                        <p class="text-gray-600 mb-6">Mejora la satisfacción con:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Chatbots inteligentes
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Soporte automatizado 24/7
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Encuestas y feedback
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/cx-automation.jpg" alt="Customer Experience Automation" class="rounded-lg shadow-lg">
+                    </div>
                 </div>
             </div>
         </div>

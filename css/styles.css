@@ -216,4 +216,48 @@ img {
         transform: translateY(-1000px) translateX(100px);
         opacity: 0;
     }
+}
+
+/* Estilos para tabs */
+.tab-button {
+    transition: all 0.3s ease;
+}
+
+.tab-button .active-indicator {
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.tab-button.active .active-indicator {
+    transform: scaleX(1) !important;
+}
+
+.tab-content {
+    transition: opacity 0.3s ease;
+}
+
+.tab-content.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.tab-content.active {
+    display: grid;
+    opacity: 1;
+}
+
+/* Animación para el contenido de los tabs */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tab-content.active {
+    animation: fadeIn 0.5s ease forwards;
 } 
