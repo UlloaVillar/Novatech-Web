@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novatech - Expertos en automatización con IA para empresas. Ahorra tiempo y reduce errores automatizando tus procesos repetitivos.">
+    <meta name="keywords" content="automatización, inteligencia artificial, procesos empresariales, eficiencia empresarial, automatización de tareas">
+    <title>Novatech | Automatización Inteligente para Empresas</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': 'rgb(76, 46, 213)',
+                        'primary-purple': 'rgb(133, 40, 230)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Preload de imágenes críticas -->
+    <link rel="preload" as="image" href="images/logo.png">
+</head>
+<body class="bg-white">
+    <!-- Header + Hero Section -->
+    <div class="bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)] animated-gradient">
+        <div class="network-lines"></div>
+        <div class="particles">
+            <div class="particle" style="left: 20%; top: 30%"></div>
+            <div class="particle" style="left: 80%; top: 20%"></div>
+            <div class="particle" style="left: 40%; top: 60%"></div>
+            <div class="particle" style="left: 60%; top: 40%"></div>
+            <div class="particle" style="left: 30%; top: 70%"></div>
+        </div>
+
+        <!-- Header -->
+        <header class="fixed w-full z-50 transition-all duration-300">
+            <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+                <a href="/" class="flex items-center" aria-label="Novatech - Inicio">
+                    <img src="images/logo.png" alt="Novatech Logo" class="h-8">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="flex items-center space-x-8">
+                        <a href="#automatizar" class="nav-link text-white hover:text-white/80 transition-colors">Qué automatizar</a>
+                        <a href="#proceso" class="nav-link text-white hover:text-white/80 transition-colors">Cómo trabajamos</a>
+                        <a href="#casos" class="nav-link text-white hover:text-white/80 transition-colors">Casos reales</a>
+                    </div>
+                    <a href="#contacto" class="nav-button bg-white text-[rgb(76,46,213)] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors">Contactar</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 text-white relative">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        Automatizamos tus procesos con IA
+                    </h1>
+                    <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                        Ahorra tiempo, reduce errores y libera a tu equipo.
+                    </p>
+                    <a href="#automatizar" class="inline-flex items-center bg-white text-[rgb(76,46,213)] px-8 py-4 rounded-lg text-lg hover:bg-white/90 transition-colors">
+                        Ver qué podemos automatizar
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección de Dolor/Urgencia -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">
+                    Estás perdiendo tiempo en tareas que ya no hacen falta
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Mientras sigues dedicando horas a copiar datos, responder emails repetitivos o generar informes manualmente, tu competencia ya está automatizando todo eso. La tecnología está aquí - ¿por qué no aprovecharla?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué podemos automatizar -->
+    <section id="automatizar" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                ¿Qué podemos automatizar en tu empresa?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Email -->
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">✉️</div>
+                    <h3 class="text-2xl font-bold mb-4">Emails automáticos</h3>
+                    <p class="text-gray-600">
+                        Respuestas automáticas personalizadas, seguimiento de clientes y envío de documentación sin intervención manual.
+                    </p>
+                </div>
+
+                <!-- Excel -->
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold mb-4">Procesamiento de Excel</h3>
+                    <p class="text-gray-600">
+                        Actualización automática de datos, cálculos complejos y generación de informes sin tocar una celda.
+                    </p>
+                </div>
+
+                <!-- Documentos -->
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">📄</div>
+                    <h3 class="text-2xl font-bold mb-4">Gestión documental</h3>
+                    <p class="text-gray-600">
+                        Extracción de datos de PDFs, clasificación automática y archivo organizado sin esfuerzo manual.
+                    </p>
+                </div>
+
+                <!-- Datos -->
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">🔄</div>
+                    <h3 class="text-2xl font-bold mb-4">Sincronización de datos</h3>
+                    <p class="text-gray-600">
+                        Mantén tus sistemas actualizados automáticamente sin copiar y pegar entre aplicaciones.
+                    </p>
+                </div>
+
+                <!-- Informes -->
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-2xl font-bold mb-4">Informes automáticos</h3>
+                    <p class="text-gray-600">
+                        Generación y envío de reportes periódicos sin intervención humana, siempre a tiempo.
+                    </p>
+                </div>
+
+                <!-- Atención al cliente -->
+                <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 class="text-2xl font-bold mb-4">Atención al cliente</h3>
+                    <p class="text-gray-600">
+                        Respuestas 24/7 a preguntas frecuentes y gestión automática de incidencias comunes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo trabajamos -->
+    <section id="proceso" class="py-20 bg-[#f5f7ff]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                No vendemos humo. Trabajamos contigo paso a paso.
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paso 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-4">🧐</div>
+                    <h3 class="text-2xl font-bold mb-4">Te escuchamos</h3>
+                    <p class="text-gray-600">
+                        Entendemos tu proceso actual, identificamos cuellos de botella y oportunidades de mejora.
+                    </p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="text-2xl font-bold mb-4">Proponemos lo que más impacto tiene</h3>
+                    <p class="text-gray-600">
+                        Diseñamos una solución práctica y medible, centrada en el ROI más inmediato.
+                    </p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold mb-4">Lo montamos sin líos</h3>
+                    <p class="text-gray-600">
+                        Implementamos, probamos y ajustamos hasta que todo funcione como un reloj.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">
+                    ¿Qué cambia cuando automatizas?
+                </h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Tu equipo recupera 10+ horas semanales para tareas que realmente importan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Eliminas errores humanos en procesos críticos</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Reduces tiempos de respuesta de días a minutos</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Mejoras la satisfacción de clientes y empleados</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Escalas operaciones sin aumentar costes ni personal</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos reales -->
+    <section id="casos" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Automatizaciones reales que ya hemos implementado
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Caso 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <img src="images/caso-1.jpg" alt="Caso Distribuidora" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-4">Distribuidora Nacional</h3>
+                    <p class="text-gray-600">
+                        Automatizamos la gestión de 1,000+ pedidos diarios, reduciendo errores un 98% y tiempo de proceso un 75%.
+                    </p>
+                </div>
+
+                <!-- Caso 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <img src="images/caso-2.jpg" alt="Caso Inmobiliaria" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-4">Inmobiliaria Multi-sede</h3>
+                    <p class="text-gray-600">
+                        Bot que procesa 300+ documentos diarios y actualiza 5 sistemas diferentes automáticamente.
+                    </p>
+                </div>
+
+                <!-- Caso 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <img src="images/caso-3.jpg" alt="Caso Servicios" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-4">Empresa de Servicios</h3>
+                    <p class="text-gray-600">
+                        Sistema de respuesta automática que gestiona 80% de consultas sin intervención humana.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué Novatech -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12">
+                    No somos una agencia genérica. Somos tu equipo de automatización.
+                </h2>
+                <ul class="space-y-6 text-left">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Especialistas en automatización, no generalistas que hacen de todo</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Soluciones prácticas que funcionan desde el primer día</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Soporte continuo y mejoras incrementales</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">Trabajamos con tus herramientas actuales - no hay que cambiar nada</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary-blue mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-lg">ROI medible y resultados garantizados</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contacto" class="relative overflow-hidden">
+        <div class="bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)]">
+            <div class="container mx-auto px-4 py-20 text-center text-white relative z-10">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        ¿Nos cuentas cómo trabajáis y vemos qué se puede automatizar?
+                    </h2>
+                    <p class="text-xl mb-8 text-white/90">
+                        Sin compromiso. Solo una llamada para ver si encajamos.
+                    </p>
+                    <a href="#contacto" class="inline-flex items-center bg-white text-[rgb(76,46,213)] px-8 py-4 rounded-lg text-lg hover:bg-white/90 transition-colors">
+                        Hablar con Novatech
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Efecto de partículas -->
+            <div class="particles absolute inset-0">
+                <div class="particle" style="left: 20%; top: 30%"></div>
+                <div class="particle" style="left: 80%; top: 20%"></div>
+                <div class="particle" style="left: 40%; top: 60%"></div>
+                <div class="particle" style="left: 60%; top: 40%"></div>
+                <div class="particle" style="left: 30%; top: 70%"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <img src="images/logo.png" alt="Novatech Logo" class="h-8 mb-4">
+                    <p class="text-gray-600">
+                        Expertos en automatización inteligente para empresas.
+                    </p>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="/privacy-policy" class="text-gray-600 hover:text-primary transition-colors">Privacy Policy</a>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="text-gray-600 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
