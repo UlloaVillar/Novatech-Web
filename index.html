@@ -27,6 +27,9 @@
     
     <!-- Preload de imágenes críticas -->
     <link rel="preload" as="image" href="images/logo.png">
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body class="bg-white">
     <div class="bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)]">
@@ -52,7 +55,11 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-5xl md:text-6xl font-bold mb-6">
-                        Desarrollamos productos y servicios digitales a medida
+                        Automatizamos <br/>
+                        <span class="inline-block">
+                            <span id="typed" class="text-white/90"></span>
+                        </span><br/>
+                        para tu empresa
                     </h1>
                     <p class="text-xl text-white/90 mb-8">
                         Ayudamos a empresas y startups a transformar sus ideas en negocios
@@ -182,5 +189,26 @@
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Typed('#typed', {
+                strings: [
+                    'emails ✉️',
+                    'facturas 📄',
+                    'excels 📊',
+                    'traducciones 🌍',
+                    'procesos 🔄'
+                ],
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 1500,
+                startDelay: 500,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true,
+            });
+        });
+    </script>
 </body>
 </html> 

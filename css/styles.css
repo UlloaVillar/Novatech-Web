@@ -13,6 +13,26 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilos para la animación de texto */
+.typed-cursor {
+    font-size: 2.5rem;
+    line-height: 1;
+    vertical-align: middle;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#typed {
+    min-height: 3.5rem;
+    display: inline-block;
+}
+
 /* Animaciones suaves */
 .transition-all {
     transition-property: all;
