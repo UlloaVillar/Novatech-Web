@@ -130,6 +130,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Activar la primera tab por defecto
     activateTab('asistentes');
+
+    // Configurar videos para que se vean más caseros
+    function setupVideos() {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            // Aumentar velocidad de reproducción (1.5x más rápido)
+            video.playbackRate = 1.5;
+            
+            // Añadir un poco de "ruido" visual para que se vea más casero
+            video.style.filter = 'contrast(1.1) brightness(1.05) saturate(1.1)';
+            
+            // Asegurar que estén centrados
+            video.style.objectPosition = 'center';
+        });
+    }
+
+    // Configurar videos cuando se cambie de tab
+    function setupTabVideos() {
+        setTimeout(() => {
+            setupVideos();
+        }, 100);
+    }
+
+    // Configurar videos inicialmente
+    setupVideos();
+
+    // Configurar videos cada vez que se active una tab
+    const originalActivateTab = activateTab;
+    activateTab = function(tabId) {
+        originalActivateTab.call(this, tabId);
+        setupTabVideos();
+    };
 });
 
 // Rotación de imágenes del hero
