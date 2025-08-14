@@ -265,3 +265,16 @@ img {
 .tab-content.active {
     animation: fadeIn 0.5s ease forwards;
 } 
+
+/* Navbar scroll effects */
+.navbar-scrolled {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-transparent {
+    background-color: transparent;
+}
+
+/* Logo switching - usando Tailwind hidden */
+/* Eliminamos las reglas que pueden estar interfiriendo */ 

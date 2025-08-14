@@ -41,10 +41,11 @@
         </div>
 
         <!-- Header -->
-        <header class="fixed w-full z-50 transition-all duration-300">
+        <header class="fixed w-full z-50 transition-all duration-300 navbar-transparent">
             <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
                 <a href="/" class="flex items-center" aria-label="Novatech - Inicio">
-                    <img src="images/Group-9.png" alt="Novatech Logo" class="h-8">
+                    <img src="images/Group-8.png" alt="Novatech Logo" class="h-12 logo-transparent">
+                    <img src="images/Group-9.png" alt="Novatech Logo" class="h-12 logo-scrolled hidden">
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <div class="flex items-center space-x-8">
@@ -351,7 +352,7 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-8 md:mb-0">
-                    <img src="images/Group-9.png" alt="Novatech Logo" class="h-8 mb-4">
+                    <img src="images/Group-9.png" alt="Novatech Logo" class="h-12 mb-4">
                     <p class="text-gray-600">
                         Expertos en automatización inteligente para empresas.
                     </p>
@@ -369,5 +370,54 @@
             </div>
         </div>
     </footer>
+
+    <!-- Custom JS -->
+    <script>
+        // Navbar scroll effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            const logoTransparent = document.querySelector('.logo-transparent');
+            const logoScrolled = document.querySelector('.logo-scrolled');
+            let scrollTimeout;
+
+            function makeNavbarTransparent() {
+                header.style.backgroundColor = 'transparent';
+                if (logoTransparent && logoScrolled) {
+                    logoTransparent.style.display = 'block';
+                    logoScrolled.style.display = 'none';
+                }
+            }
+
+            function makeNavbarSolid() {
+                header.style.backgroundColor = 'white';
+                header.classList.add('shadow-md');
+                if (logoTransparent && logoScrolled) {
+                    logoTransparent.style.display = 'none';
+                    logoScrolled.style.display = 'block';
+                }
+            }
+
+            // Inicialmente transparente
+            makeNavbarTransparent();
+
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset;
+                
+                clearTimeout(scrollTimeout);
+
+                if (currentScroll > 50) {
+                    makeNavbarSolid();
+                    
+                    scrollTimeout = setTimeout(() => {
+                        if (currentScroll <= 50) {
+                            makeNavbarTransparent();
+                        }
+                    }, 1000);
+                } else {
+                    makeNavbarTransparent();
+                }
+            });
+        });
+    </script>
 </body>
 </html> 

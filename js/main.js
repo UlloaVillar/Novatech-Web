@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     const navLinks = document.querySelectorAll('.nav-link');
     const navButton = document.querySelector('.nav-button');
+    const logoTransparent = document.querySelector('.logo-transparent');
+    const logoScrolled = document.querySelector('.logo-scrolled');
     let lastScroll = 0;
     let scrollTimeout;
 
@@ -14,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         navButton.classList.remove('bg-primary-blue', 'text-white');
         navButton.classList.add('bg-white', 'text-[rgb(76,46,213)]');
+        
+        // Cambiar logo
+        if (logoTransparent && logoScrolled) {
+            logoTransparent.style.display = 'block';
+            logoScrolled.style.display = 'none';
+        }
     }
 
     function makeNavbarSolid() {
@@ -25,6 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         navButton.classList.remove('bg-white', 'text-[rgb(76,46,213)]');
         navButton.classList.add('bg-primary-blue', 'text-white');
+        
+        // Cambiar logo
+        if (logoTransparent && logoScrolled) {
+            logoTransparent.style.display = 'none';
+            logoScrolled.style.display = 'block';
+        }
     }
 
     // Inicialmente transparente
