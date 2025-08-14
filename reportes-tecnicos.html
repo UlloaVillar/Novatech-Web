@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Genera reportes técnicos profesionales en 5 minutos. Sube tus datos Excel/CSV y obtén informes formales listos para enviar. Ahorra 4 horas de trabajo.">
+    <meta name="keywords" content="reportes técnicos, informes automáticos, automatización de reportes, Excel a PDF, reportes ISO, compliance, calidad">
+    <title>ReportesTécnicos.ai | Genera Informes Profesionales en 5 Minutos</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Group-9.png">
+    
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" as="image" href="images/Group-9.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-900">ReportesTécnicos.ai</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#demo" class="text-gray-600 hover:text-gray-900 px-4 py-2 rounded-md text-sm font-medium">Demo</a>
+                    <a href="#precios" class="text-gray-600 hover:text-gray-900 px-4 py-2 rounded-md text-sm font-medium">Precios</a>
+                    <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">Prueba Gratis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                Reportes Técnicos en
+                <span class="text-yellow-300" id="typed-text"></span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
+                Sube tus datos Excel/CSV, responde 3 preguntas y obtén informes técnicos profesionales 
+                <strong>listos para enviar</strong> en menos de 5 minutos
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#demo" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    🚀 Ver Demo en Vivo
+                </a>
+                <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    💰 Prueba Gratis 7 Días
+                </a>
+            </div>
+            <div class="mt-12 flex items-center justify-center space-x-8 text-sm">
+                <div class="flex items-center">
+                    <span class="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
+                    Sin integraciones complejas
+                </div>
+                <div class="flex items-center">
+                    <span class="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
+                    Reportes listos para enviar
+                </div>
+                <div class="flex items-center">
+                    <span class="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
+                    Ahorra 4 horas por informe
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema y Solución -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                        ¿Cansado de perder <span class="text-red-500">4 horas</span> en cada reporte?
+                    </h2>
+                    <div class="space-y-4 text-gray-600">
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">❌</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Redacción manual repetitiva</h4>
+                                <p>Mismo formato, mismo contenido, solo cambian los números</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">❌</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Formateo interminable</h4>
+                                <p>Tablas, gráficos y estilos que nunca quedan perfectos</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">❌</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Errores de última hora</h4>
+                                <p>Datos desactualizados o conclusiones incorrectas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                        Nuestra Solución
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">Sube Excel/CSV en segundos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">Responde 3 preguntas de contexto</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">Reporte profesional en 5 minutos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">PDF/Word listo para enviar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Uso -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Sectores que ya están ahorrando tiempo
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Desde consultoras de calidad hasta ingeniería industrial, 
+                    todos generan reportes técnicos que pueden automatizarse
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Consultoras de Calidad -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🏆</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Consultoras de Calidad</h3>
+                    <p class="text-gray-600">Informes ISO 9001, 14001, 27001 mensuales y trimestrales</p>
+                </div>
+
+                <!-- Ingeniería Industrial -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">⚙️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Ingeniería Industrial</h3>
+                    <p class="text-gray-600">Reportes de mantenimiento preventivo y correctivo</p>
+                </div>
+
+                <!-- Construcción -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                    <span class="text-2xl">🏗️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Construcción</h3>
+                    <p class="text-gray-600">Seguimiento de obra y hitos del proyecto</p>
+                </div>
+
+                <!-- Consultoría Financiera -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">💼</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Consultoría Financiera</h3>
+                    <p class="text-gray-600">Reportes de compliance y due diligence</p>
+                </div>
+
+                <!-- Laboratorios -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🧪</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Laboratorios</h3>
+                    <p class="text-gray-600">Análisis de muestras y control de lotes</p>
+                </div>
+
+                <!-- Energía y Utilities -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Energía y Utilities</h3>
+                    <p class="text-gray-600">Reportes regulatorios y de incidencias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Ve cómo funciona en 2 minutos
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Sube un Excel de ejemplo y genera tu primer reporte técnico gratis
+                </p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">📊</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">1. Sube tus datos</h3>
+                        <p class="text-gray-600">Excel, CSV o base de datos. Cualquier formato</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">❓</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">2. Responde 3 preguntas</h3>
+                        <p class="text-gray-600">Contexto, enfoque y personalización</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">📄</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">3. Descarga tu reporte</h3>
+                        <p class="text-gray-600">PDF o Word profesional en 5 minutos</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                        🚀 Probar Demo Gratis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precios" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Precios simples y transparentes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Sin sorpresas, sin costes ocultos. Solo pagas por lo que usas
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Plan Starter -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-gray-200">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                        <p class="text-gray-600">Para equipos pequeños</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-900">49€</span>
+                        <span class="text-gray-600">/mes</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>50 reportes/mes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Formatos PDF y Word</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Plantillas estándar</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Soporte por email</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-gray-600 hover:bg-gray-700 text-white py-3 rounded-lg font-semibold transition-colors block text-center">
+                        Empezar
+                    </a>
+                </div>
+
+                <!-- Plan Professional -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-blue-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Más Popular</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
+                        <p class="text-gray-600">Para empresas medianas</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-900">99€</span>
+                        <span class="text-gray-600">/mes</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>200 reportes/mes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Formatos PDF y Word</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Plantillas personalizadas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Soporte prioritario</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>API básica</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors block text-center">
+                        Empezar
+                    </a>
+                </div>
+
+                <!-- Plan Enterprise -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-gray-200">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+                        <p class="text-gray-600">Para grandes empresas</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-900">299€</span>
+                        <span class="text-gray-600">/mes</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Reportes ilimitados</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Formatos personalizados</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Plantillas a medida</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Soporte 24/7</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>API completa</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Integración SSO</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-gray-600 hover:bg-gray-700 text-white py-3 rounded-lg font-semibold transition-colors block text-center">
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Lo que dicen nuestros clientes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Empresas que ya están ahorrando horas cada mes
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">JM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Juan Martínez</h4>
+                            <p class="text-sm text-gray-600">Responsable de Calidad</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Antes tardaba 6 horas en cada informe ISO mensual. Ahora en 15 minutos tengo todo listo. 
+                        La calidad es incluso mejor que la manual."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <strong>Empresa:</strong> Consultora ISO Madrid<br>
+                        <strong>Ahorro:</strong> 5.5 horas/mes
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-green-600 font-bold">AS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Ana Sánchez</h4>
+                            <p class="text-sm text-gray-600">Jefa de Mantenimiento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Los reportes de mantenimiento industrial son muy repetitivos. 
+                        Con esta herramienta mi equipo puede enfocarse en lo importante: prevenir averías."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <strong>Empresa:</strong> Planta Industrial Valencia<br>
+                        <strong>Ahorro:</strong> 12 horas/mes
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">CL</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Carlos López</h4>
+                            <p class="text-sm text-gray-600">Project Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Como consultor de construcción, necesito enviar informes semanales a mis clientes. 
+                        Ahora puedo generar 10 reportes en el tiempo que antes tardaba en hacer 1."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <strong>Empresa:</strong> Consultora Construcción<br>
+                        <strong>Ahorro:</strong> 8 horas/mes
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 cta-gradient">
+        <div class="max-w-4xl mx-auto text-center text-white px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-6">
+                ¿Listo para ahorrar 4 horas en cada reporte?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Únete a las empresas que ya están generando reportes técnicos profesionales en minutos, no en horas
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" class="bg-white text-red-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    🚀 Empezar Prueba Gratis
+                </a>
+                <a href="#demo" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-red-600 transition-colors">
+                    📺 Ver Demo en Vivo
+                </a>
+            </div>
+            <p class="mt-6 text-sm opacity-75">
+                Sin tarjeta de crédito • 7 días gratis • Cancelación en cualquier momento
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-2xl font-bold text-white mb-4 block">ReportesTécnicos.ai</span>
+                    <p class="text-gray-400">
+                        Genera reportes técnicos profesionales en 5 minutos. 
+                        Ahorra tiempo, reduce errores, mantén calidad.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Producto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#demo" class="hover:text-white">Demo</a></li>
+                        <li><a href="#precios" class="hover:text-white">Precios</a></li>
+                        <li><a href="#" class="hover:text-white">API</a></li>
+                        <li><a href="#" class="hover:text-white">Integraciones</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Sectores</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Calidad ISO</a></li>
+                        <li><a href="#" class="hover:text-white">Ingeniería</a></li>
+                        <li><a href="#" class="hover:text-white">Construcción</a></li>
+                        <li><a href="#" class="hover:text-white">Laboratorios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Sobre nosotros</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Soporte</a></li>
+                        <li><a href="#" class="hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ReportesTécnicos.ai. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Formulario de Contacto Flotante -->
+    <div id="contacto" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-2xl p-8 max-w-md w-full max-h-[90vh] overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Prueba Gratis 7 Días</h3>
+                    <button onclick="closeContactForm()" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nombre completo *</label>
+                        <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email corporativo *</label>
+                        <input type="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Empresa *</label>
+                        <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Cargo *</label>
+                        <select required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Selecciona tu cargo</option>
+                            <option value="responsable-calidad">Responsable de Calidad</option>
+                            <option value="jefe-mantenimiento">Jefe de Mantenimiento</option>
+                            <option value="project-manager">Project Manager</option>
+                            <option value="consultor">Consultor</option>
+                            <option value="director">Director/Gerente</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Sector *</label>
+                        <select required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Selecciona tu sector</option>
+                            <option value="calidad-iso">Calidad y Compliance ISO</option>
+                            <option value="ingenieria">Ingeniería Industrial</option>
+                            <option value="construccion">Construcción e Ingeniería Civil</option>
+                            <option value="consultoria">Consultoría Financiera/Legal</option>
+                            <option value="laboratorios">Laboratorios y Control de Calidad</option>
+                            <option value="energia">Energía y Utilities</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">¿Cuántos reportes técnicos generas al mes? *</label>
+                        <select required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Selecciona</option>
+                            <option value="1-5">1-5 reportes</option>
+                            <option value="6-15">6-15 reportes</option>
+                            <option value="16-30">16-30 reportes</option>
+                            <option value="30+">Más de 30 reportes</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                        🚀 Empezar Prueba Gratis
+                    </button>
+                </form>
+                
+                <p class="text-xs text-gray-500 mt-4 text-center">
+                    Al enviar este formulario, aceptas recibir emails sobre nuestro producto. 
+                    Puedes cancelar la suscripción en cualquier momento.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Typed.js para el texto animado
+        new Typed('#typed-text', {
+            strings: ['5 minutos', 'segundos', 'instantes'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+            backDelay: 2000
+        });
+
+        // Formulario de contacto
+        function openContactForm() {
+            document.getElementById('contacto').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeContactForm() {
+            document.getElementById('contacto').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Abrir formulario al hacer clic en cualquier CTA
+        document.querySelectorAll('a[href="#contacto"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                openContactForm();
+            });
+        });
+
+        // Cerrar formulario al hacer clic fuera
+        document.getElementById('contacto').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeContactForm();
+            }
+        });
+
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#contacto') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

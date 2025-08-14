@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asistente inteligente para Excel que analiza ventas e inventario. Detecta roturas de stock, tendencias y da recomendaciones automáticas. Sin BI caro.">
+    <meta name="keywords" content="asistente excel, análisis ventas, gestión inventario, roturas stock, e-commerce, shopify, woocommerce">
+    <title>ExcelAssistant.ai | Tu Excel Habla y Te Da Recomendaciones</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Group-9.png">
+    
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" as="image" href="images/Group-9.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .excel-preview {
+            background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
+                        linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
+                        linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
+                        linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-900">ExcelAssistant.ai</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#demo" class="text-gray-600 hover:text-gray-900 px-4 py-2 rounded-md text-sm font-medium">Demo</a>
+                    <a href="#precios" class="text-gray-600 hover:text-gray-900 px-4 py-2 rounded-md text-sm font-medium">Precios</a>
+                    <a href="#contacto" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">Probar Gratis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                Tu Excel Habla y Te Da
+                <span class="text-yellow-300" id="typed-text"></span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
+                Sube tu Excel de ventas o inventario y haz preguntas como 
+                <strong>"¿Qué productos reponer?"</strong> o <strong>"¿Cuáles llevan 15 días sin vender?"</strong>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#demo" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    🚀 Ver Demo en Vivo
+                </a>
+                <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    💰 Probar 7 Días Gratis
+                </a>
+            </div>
+            <div class="mt-12 flex items-center justify-center space-x-8 text-sm">
+                <div class="flex items-center">
+                    <span class="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
+                    Sin BI caro ni herramientas nuevas
+                </div>
+                <div class="flex items-center">
+                    <span class="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
+                    Respuestas en segundos
+                </div>
+                <div class="flex items-center">
+                    <span class="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
+                    Recomendaciones automáticas
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema y Solución -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                        ¿Cansado de perder ventas por <span class="text-red-500">roturas de stock</span>?
+                    </h2>
+                    <div class="space-y-4 text-gray-600">
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">❌</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Roturas de stock que matan ventas</h4>
+                                <p>Clientes que quieren comprar pero no pueden</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">❌</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Exceso de inventario inmoviliza capital</h4>
+                                <p>Dinero atrapado en productos que no se venden</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">❌</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Decisiones basadas en intuición</h4>
+                                <p>No en datos reales de ventas e inventario</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-2xl mr-3">❌</span>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Revisar cientos de filas en Excel</h4>
+                                <p>Horas perdidas buscando información</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                        Nuestra Solución
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">Sube tu Excel en segundos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">Haz preguntas en lenguaje natural</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">Recibe respuestas y recomendaciones</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center mr-4 text-lg">✓</span>
+                            <span class="text-gray-700">Sin aprender herramientas nuevas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Uso -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Sectores que ya están ahorrando tiempo
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Desde e-commerce hasta tiendas físicas, todos gestionan inventario 
+                    que puede optimizarse con inteligencia artificial
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- E-commerce -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🛒</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">E-commerce</h3>
+                    <p class="text-gray-600">Shopify, WooCommerce, PrestaShop con catálogos grandes</p>
+                </div>
+
+                <!-- Tiendas Físicas -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🏪</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Tiendas Físicas</h3>
+                    <p class="text-gray-600">TPV con exportación a Excel y gestión de inventario</p>
+                </div>
+
+                <!-- Distribuidores B2B -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🚚</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Distribuidores B2B</h3>
+                    <p class="text-gray-600">Gestión de stock en hojas de cálculo</p>
+                </div>
+
+                <!-- Moda y Accesorios -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">👗</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Moda y Accesorios</h3>
+                    <p class="text-gray-600">Alta rotación y estacionalidad</p>
+                </div>
+
+                <!-- Electrónica -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Electrónica y Gadgets</h3>
+                    <p class="text-gray-600">Productos con obsolescencia rápida</p>
+                </div>
+
+                <!-- Alimentación -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-2xl">🍎</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Alimentación</h3>
+                    <p class="text-gray-600">Productos perecederos y caducidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Ve cómo funciona en 2 minutos
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Sube un Excel de ejemplo y haz preguntas como si fuera un consultor
+                </p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-2xl">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">📊</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">1. Sube tu Excel</h3>
+                        <p class="text-gray-600">Ventas, inventario, cualquier formato</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">❓</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">2. Haz preguntas</h3>
+                        <p class="text-gray-600">En lenguaje natural, como a un consultor</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">💡</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">3. Recibe respuestas</h3>
+                        <p class="text-gray-600">Análisis, recomendaciones y alertas</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#contacto" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                        🚀 Probar Demo Gratis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejemplos de Preguntas -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Pregunta lo que quieras, como quieras
+                </h2>
+                <p class="text-xl text-gray-600">
+                    No más fórmulas complejas ni tablas pivot. Solo preguntas naturales
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">📈 Gestión de Stock</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Pregunta:</strong> "¿Qué productos reponer esta semana?"</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Respuesta:</strong> "Producto A: reponer 50 unidades, Producto B: reponer 30 unidades..."</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Pregunta:</strong> "¿Cuáles llevan 15 días sin vender?"</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Respuesta:</strong> "Lista de productos con días sin venta y recomendaciones"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">💰 Análisis de Ventas</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Pregunta:</strong> "¿Qué productos se venden más los lunes?"</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Respuesta:</strong> "Análisis de patrones semanales y tendencias"</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Pregunta:</strong> "¿Cuál es mi margen por producto?"</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-gray-700"><strong>Respuesta:</strong> "Tabla de márgenes y productos más rentables"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Precios simples y transparentes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Sin sorpresas, sin costes ocultos. Solo pagas por lo que usas
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Plan Starter -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-gray-200">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                        <p class="text-gray-600">Para tiendas pequeñas</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-900">39€</span>
+                        <span class="text-gray-600">/mes</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Hasta 1,000 productos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>100 preguntas/mes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Alertas básicas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Soporte por email</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-gray-600 hover:bg-gray-700 text-white py-3 rounded-lg font-semibold transition-colors block text-center">
+                        Empezar
+                    </a>
+                </div>
+
+                <!-- Plan Professional -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-green-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Más Popular</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
+                        <p class="text-gray-600">Para e-commerce medianos</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-900">79€</span>
+                        <span class="text-gray-600">/mes</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Hasta 10,000 productos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Preguntas ilimitadas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Alertas avanzadas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Reportes automáticos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Soporte prioritario</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition-colors block text-center">
+                        Empezar
+                    </a>
+                </div>
+
+                <!-- Plan Enterprise -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-gray-200">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+                        <p class="text-gray-600">Para grandes empresas</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-900">199€</span>
+                        <span class="text-gray-600">/mes</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Productos ilimitados</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Preguntas ilimitadas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Alertas personalizadas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>API completa</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Soporte 24/7</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span>Integración SSO</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-gray-600 hover:bg-gray-700 text-white py-3 rounded-lg font-semibold transition-colors block text-center">
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Lo que dicen nuestros clientes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    E-commerce que ya están ahorrando tiempo y aumentando ventas
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">ML</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">María López</h4>
+                            <p class="text-sm text-gray-600">Owner, ModaExpress</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Antes perdía ventas por roturas de stock. Ahora el asistente me avisa automáticamente 
+                        qué reponer y cuándo. Mis ventas aumentaron 23% en 2 meses."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <strong>Empresa:</strong> E-commerce de moda<br>
+                        <strong>Resultado:</strong> +23% ventas
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-green-600 font-bold">CP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Carlos Pérez</h4>
+                            <p class="text-sm text-gray-600">Encargado de Compras</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Antes tardaba 3 horas analizando Excel para decidir qué comprar. 
+                        Ahora hago la pregunta y en segundos tengo la respuesta con recomendaciones."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <strong>Empresa:</strong> Tienda de electrónica<br>
+                        <strong>Ahorro:</strong> 3 horas/día
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">AS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Ana Sánchez</h4>
+                            <p class="text-sm text-gray-600">CEO, GadgetStore</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Como CEO, necesito información rápida para tomar decisiones. 
+                        Este asistente me da insights que antes requerían un analista de datos."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <strong>Empresa:</strong> E-commerce de gadgets<br>
+                        <strong>Beneficio:</strong> Decisiones más rápidas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 cta-gradient">
+        <div class="max-w-4xl mx-auto text-center text-white px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-6">
+                ¿Listo para que tu Excel hable?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Únete a los e-commerce que ya están tomando mejores decisiones 
+                en segundos, no en horas
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" class="bg-white text-red-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    🚀 Probar 7 Días Gratis
+                </a>
+                <a href="#demo" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-red-600 transition-colors">
+                    📺 Ver Demo en Vivo
+                </a>
+            </div>
+            <p class="mt-6 text-sm opacity-75">
+                Sin tarjeta de crédito • 7 días gratis • Cancelación en cualquier momento
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-2xl font-bold text-white mb-4 block">ExcelAssistant.ai</span>
+                    <p class="text-gray-400">
+                        Tu Excel habla y te da recomendaciones inteligentes. 
+                        Sin BI caro, sin fórmulas complejas.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Producto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#demo" class="hover:text-white">Demo</a></li>
+                        <li><a href="#precios" class="hover:text-white">Precios</a></li>
+                        <li><a href="#" class="hover:text-white">API</a></li>
+                        <li><a href="#" class="hover:text-white">Integraciones</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Sectores</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">E-commerce</a></li>
+                        <li><a href="#" class="hover:text-white">Tiendas Físicas</a></li>
+                        <li><a href="#" class="hover:text-white">Distribuidores</a></li>
+                        <li><a href="#" class="hover:text-white">Moda y Accesorios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Sobre nosotros</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Soporte</a></li>
+                        <li><a href="#" class="hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ExcelAssistant.ai. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Formulario de Contacto Flotante -->
+    <div id="contacto" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-2xl p-8 max-w-md w-full max-h-[90vh] overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Probar 7 Días Gratis</h3>
+                    <button onclick="closeContactForm()" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nombre completo *</label>
+                        <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email corporativo *</label>
+                        <input type="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Empresa *</label>
+                        <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Cargo *</label>
+                        <select required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <option value="">Selecciona tu cargo</option>
+                            <option value="owner">Owner/CEO</option>
+                            <option value="gerente">Gerente/Director</option>
+                            <option value="compras">Encargado de Compras</option>
+                            <option value="operaciones">Responsable de Operaciones</option>
+                            <option value="logistica">Responsable de Logística</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Sector *</label>
+                        <select required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <option value="">Selecciona tu sector</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="tienda-fisica">Tienda Física</option>
+                            <option value="distribuidor">Distribuidor B2B</option>
+                            <option value="moda">Moda y Accesorios</option>
+                            <option value="electronica">Electrónica y Gadgets</option>
+                            <option value="alimentacion">Alimentación</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">¿Cuántos productos gestionas? *</label>
+                        <select required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <option value="">Selecciona</option>
+                            <option value="1-100">1-100 productos</option>
+                            <option value="101-500">101-500 productos</option>
+                            <option value="501-1000">501-1,000 productos</option>
+                            <option value="1000+">Más de 1,000 productos</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                        🚀 Empezar Prueba Gratis
+                    </button>
+                </form>
+                
+                <p class="text-xs text-gray-500 mt-4 text-center">
+                    Al enviar este formulario, aceptas recibir emails sobre nuestro producto. 
+                    Puedes cancelar la suscripción en cualquier momento.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Typed.js para el texto animado
+        new Typed('#typed-text', {
+            strings: ['Recomendaciones', 'Alertas', 'Insights'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+            backDelay: 2000
+        });
+
+        // Formulario de contacto
+        function openContactForm() {
+            document.getElementById('contacto').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeContactForm() {
+            document.getElementById('contacto').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Abrir formulario al hacer clic en cualquier CTA
+        document.querySelectorAll('a[href="#contacto"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                openContactForm();
+            });
+        });
+
+        // Cerrar formulario al hacer clic fuera
+        document.getElementById('contacto').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeContactForm();
+            }
+        });
+
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#contacto') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
