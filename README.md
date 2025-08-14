@@ -1,73 +1,114 @@
-# Novatech - Sitio Web Corporativo
+# Novatech - Sitio Web de Automatización
 
-Sitio web corporativo para Novatech, una agencia de desarrollo web e IA.
+## 🚀 Despliegue en Producción
 
-## Características
+### **Opción 1: Netlify (Recomendada - GRATIS)**
 
-- Diseño responsive y moderno
-- Optimizado para SEO
-- Integración con Tally Forms
-- Rendimiento optimizado
-- Accesibilidad mejorada
+1. **Crear cuenta en Netlify**:
+   - Ve a [netlify.com](https://netlify.com)
+   - Regístrate con tu cuenta de GitHub
 
-## Tecnologías Utilizadas
+2. **Subir el proyecto**:
+   - Haz clic en "New site from Git"
+   - Conecta tu repositorio de GitHub
+   - Selecciona la rama `main`
+   - Build command: (dejar vacío)
+   - Publish directory: `.` (punto)
 
-- HTML5
-- CSS3 (con Tailwind CSS)
-- JavaScript Vanilla
-- Tailwind CSS (via CDN)
+3. **Configurar dominio**:
+   - Netlify te dará una URL temporal
+   - Puedes conectar tu dominio personalizado después
 
-## Instalación
+### **Opción 2: Vercel (GRATIS)**
 
-1. Clona este repositorio:
-```bash
-git clone https://github.com/tu-usuario/novatech-web.git
+1. **Crear cuenta en Vercel**:
+   - Ve a [vercel.com](https://vercel.com)
+   - Conecta tu cuenta de GitHub
+
+2. **Desplegar**:
+   - Haz clic en "New Project"
+   - Importa tu repositorio
+   - Framework Preset: Other
+   - Build Command: (dejar vacío)
+   - Output Directory: `.`
+
+### **Opción 3: GitHub Pages + Cloudflare (GRATIS)**
+
+1. **Habilitar GitHub Pages**:
+   - Ve a Settings → Pages
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: / (root)
+
+2. **Configurar Cloudflare**:
+   - Crea cuenta en [cloudflare.com](https://cloudflare.com)
+   - Añade tu dominio
+   - Configura los nameservers
+
+## 📁 Estructura del Proyecto
+
+```
+/
+├── index.html              # Página principal
+├── index-landing.html      # Landing page B2B
+├── css/
+│   └── styles.css         # Estilos personalizados
+├── js/
+│   └── main.js            # JavaScript principal
+├── images/
+│   ├── Group-8.png        # Logo transparente
+│   ├── Group-9.png        # Logo sólido
+│   ├── hero-1.png         # Imagen hero 1
+│   ├── hero-2.png         # Imagen hero 2
+│   └── hero-3.png         # Imagen hero 3
+└── videos/
+    ├── excelvideo.mp4      # Video Excel
+    ├── emailvideo.mp4      # Video Email
+    └── Automaticreport.mp4 # Video Informes
 ```
 
-2. No se requiere instalación adicional ya que usa Tailwind CSS via CDN.
+## 🎯 Características
 
-3. Para desarrollo local, puedes usar cualquier servidor web estático. Por ejemplo con Python:
-```bash
-python -m http.server 8000
-```
+- ✅ **Navbar dinámico** con cambio de logo según scroll
+- ✅ **Videos automáticos** en tabs principales
+- ✅ **Sistema de tabs** interactivo
+- ✅ **Diseño responsive** con Tailwind CSS
+- ✅ **SEO optimizado** con metadatos completos
+- ✅ **Favicon personalizado** con Group-9.png
 
-## Despliegue en GitHub Pages
+## 🔧 Configuración
 
-1. Ve a la configuración del repositorio
-2. En la sección "GitHub Pages"
-3. Selecciona la rama main como fuente
-4. El sitio estará disponible en https://tu-usuario.github.io/novatech-web/
+### **Favicon y Metadatos**
+- Favicon: `images/Group-9.png`
+- Título: "Novatech | Automatización Inteligente para Empresas"
+- Descripción: Optimizada para SEO y redes sociales
 
-## Optimización SEO
+### **Videos**
+- **Excel**: `videos/excelvideo.mp4`
+- **Email**: `videos/emailvideo.mp4`
+- **Informes**: `videos/Automaticreport.mp4`
 
-El sitio está optimizado para SEO con:
+## 📱 Responsive Design
 
-- Meta tags descriptivos
-- Estructura de encabezados semántica
-- URLs amigables
-- Imágenes optimizadas con alt text
-- Rendimiento optimizado
-- Schema.org markup
-- Sitemap XML
+- **Mobile-first** con Tailwind CSS
+- **Breakpoints**: sm, md, lg, xl
+- **Grid system** adaptativo
+- **Imágenes y videos** optimizados para móvil
 
-## Mantenimiento
+## 🚀 Performance
 
-Para mantener el sitio actualizado:
+- **Videos precargados** con `preload="auto"`
+- **Imágenes optimizadas** con `object-fit: cover`
+- **CSS minificado** (Tailwind CDN)
+- **JavaScript optimizado** para carga rápida
 
-1. Actualiza el contenido en index.html
-2. Las imágenes van en la carpeta /images
-3. Estilos personalizados en css/styles.css
-4. JavaScript personalizado en js/main.js
+## 🔗 Enlaces Importantes
 
-## Integración con Blog Automatizado
+- **Página principal**: `index.html`
+- **Landing B2B**: `index-landing.html`
+- **Estilos**: `css/styles.css`
+- **JavaScript**: `js/main.js`
 
-Para integrar con un bot de SEO y blog automatizado:
+## 📞 Soporte
 
-1. Crea una carpeta /blog
-2. Configura el bot para generar contenido en formato markdown
-3. Usa un generador de sitios estáticos para convertir el markdown a HTML
-4. Mantén las palabras clave principales en meta tags
-
-## Licencia
-
-MIT 
+Para cualquier problema o consulta sobre el despliegue, revisa la documentación de la plataforma elegida o contacta con el equipo de desarrollo. 
