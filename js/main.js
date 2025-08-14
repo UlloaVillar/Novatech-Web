@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Activar la primera tab por defecto
-    activateTab('asistentes');
+    activateTab('excels');
 
     // Configurar videos para que se vean más caseros
     function setupVideos() {

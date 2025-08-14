@@ -180,20 +180,20 @@
             <!-- Tabs Navigation -->
             <div class="flex flex-wrap justify-center mb-12 relative">
                 <div class="flex space-x-8 border-b border-gray-200 w-full justify-center">
-                    <button class="tab-button active py-4 px-4 text-lg font-medium relative text-primary-blue" data-tab="asistentes">
-                        Asistentes IA
+                    <button class="tab-button active py-4 px-4 text-lg font-medium relative text-primary-blue" data-tab="excels">
+                        Asistentes Excel
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
                     <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="emails">
                         Emails Automáticos
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
-                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="excels">
-                        Asistentes Excel
-                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
-                    </button>
                     <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="informes">
                         Informes Autónomos
+                        <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
+                    </button>
+                    <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="asistentes">
+                        Asistentes IA
                         <span class="active-indicator absolute bottom-0 left-0 w-full h-1 bg-primary-blue transform scale-x-0 transition-transform duration-300"></span>
                     </button>
                     <button class="tab-button py-4 px-4 text-lg font-medium relative text-gray-500 hover:text-primary-blue" data-tab="cotizaciones">
@@ -205,34 +205,45 @@
 
             <!-- Tab Content -->
             <div class="tab-content-container max-w-6xl mx-auto px-4">
-                <!-- Asistentes IA -->
-                <div class="tab-content grid grid-cols-1 md:grid-cols-2 gap-16 items-center hidden" data-tab="asistentes">
+                <!-- Excel -->
+                <div class="tab-content grid grid-cols-1 md:grid-cols-2 gap-16 items-center hidden" data-tab="excels">
                     <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">🤖 Asistentes IA</h3>
-                        <p class="text-gray-600 text-lg">Creamos asistentes que entienden tu negocio y ayudan a tu equipo a responder dudas, encontrar información o ejecutar tareas del día a día.</p>
+                        <h3 class="text-3xl font-bold">📊 Asistentes para Excel</h3>
+                        <p class="text-gray-600 text-lg">Transformamos tus hojas de cálculo en herramientas que responden dudas y generan simulaciones sin que te líes con fórmulas.</p>
                         <ul class="space-y-4">
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Responden preguntas sobre stock, precios, condiciones o entregas</span>
+                                <span class="text-gray-700">Pregunta qué producto da más margen o qué cliente compra más</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Buscan datos o documentos sin que tengas que abrir 10 carpetas</span>
+                                <span class="text-gray-700">Corre simulaciones tipo "¿y si subo precios un 10%?"</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-700">Generan emails, presupuestos o informes de forma automática</span>
+                                <span class="text-gray-700">Te ayudamos a generar fórmulas sin romperte la cabeza</span>
                             </li>
                         </ul>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="images/asistentes-ia.jpg" alt="Asistentes IA" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
+                        <video 
+                            autoplay 
+                            muted 
+                            loop 
+                            preload="auto"
+                            playsinline
+                            class="rounded-lg shadow-lg w-full object-cover h-[400px]"
+                            style="object-position: center;"
+                        >
+                            <source src="videos/excelvideo.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento video.
+                        </video>
                     </div>
                 </div>
 
@@ -278,52 +289,10 @@
                     </div>
                 </div>
 
-                <!-- Excels -->
-                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="excels">
-                    <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold">📊 Asistentes para Excel</h3>
-                        <p class="text-gray-600 text-lg">Transformamos tus hojas de cálculo en herramientas que responden dudas y generan simulaciones sin que te líes con fórmulas.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Pregunta qué producto da más margen o qué cliente compra más</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Corre simulaciones tipo "¿y si subo precios un 10%?"</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Te ayudamos a generar fórmulas sin romperte la cabeza</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="order-1 md:order-2">
-                        <video 
-                            autoplay 
-                            muted 
-                            loop 
-                            preload="auto"
-                            playsinline
-                            class="rounded-lg shadow-lg w-full object-cover h-[400px]"
-                            style="object-position: center;"
-                        >
-                            <source src="videos/excelvideo.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento video.
-                        </video>
-                    </div>
-                </div>
-
                 <!-- Informes -->
                 <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="informes">
                     <div class="order-2 md:order-1 space-y-6">
-                        <h3 class="text-3xl font-bold"> Informes automáticos</h3>
+                        <h3 class="text-3xl font-bold">📊 Informes automáticos</h3>
                         <p class="text-gray-600 text-lg">Te entregamos informes listos cada semana o cada mes, sin que nadie tenga que abrir el Excel, limpiar datos ni calcular KPIs a mano.</p>
                         <ul class="space-y-4">
                             <li class="flex items-start">
@@ -362,34 +331,63 @@
                     </div>
                 </div>
 
+                <!-- Asistentes IA -->
+                <div class="tab-content hidden grid grid-cols-1 gap-16 items-center justify-center text-center" data-tab="asistentes">
+                    <div class="max-w-3xl mx-auto space-y-6">
+                        <h3 class="text-3xl font-bold">🤖 Asistentes IA</h3>
+                        <p class="text-gray-600 text-lg">Creamos asistentes que entienden tu negocio y ayudan a tu equipo a responder dudas, encontrar información o ejecutar tareas del día a día.</p>
+                        <div class="flex justify-center">
+                            <ul class="space-y-4 text-left w-full max-w-2xl">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Responden preguntas sobre stock, precios, condiciones o entregas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Buscan datos o documentos sin que tengas que abrir 10 carpetas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Generan emails, presupuestos o informes de forma automática</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Cotizaciones -->
-                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-tab="cotizaciones">
-                    <div class="order-2 md:order-1 space-y-6">
+                <div class="tab-content hidden grid grid-cols-1 gap-16 items-center justify-center text-center" data-tab="cotizaciones">
+                    <div class="max-w-3xl mx-auto space-y-6">
                         <h3 class="text-3xl font-bold">🧾 Cotizaciones desde planos o PDFs</h3>
                         <p class="text-gray-600 text-lg">Automatizamos el cálculo a partir de planos, catálogos o PDFs. Te damos una propuesta inicial de precio lista para revisar o enviar.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Extraemos medidas, cantidades o materiales automáticamente</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Calculamos coste, margen y propuesta base con tus precios</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-700">Ahorra horas de cotización y gana precisión</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="order-1 md:order-2">
-                        <img src="images/cotizaciones.jpg" alt="Cotizaciones Automáticas" class="rounded-lg shadow-lg w-full object-cover h-[400px]">
+                        <div class="flex justify-center">
+                            <ul class="space-y-4 text-left w-full max-w-2xl">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Extraemos medidas, cantidades o materiales automáticamente</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Calculamos coste, margen y propuesta base con tus precios</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Ahorra horas de cotización y gana precisión</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
