@@ -11,6 +11,17 @@
     <link rel="icon" type="image/png" href="images/Group-9.png">
     <link rel="apple-touch-icon" href="images/Group-9.png">
     
+    <!-- Preload de imágenes críticas para mejorar performance -->
+    <link rel="preload" as="image" href="images/hero-1.png">
+    <link rel="preload" as="image" href="images/hero-2.png">
+    <link rel="preload" as="image" href="images/hero-3.png">
+    <link rel="preload" as="image" href="images/Group-9.png">
+    <link rel="preload" as="image" href="images/Group-8.png">
+    
+    <!-- Preload de videos críticos -->
+    <link rel="preload" as="video" href="videos/excelvideo.mp4">
+    <link rel="preload" as="video" href="videos/emailvideo.mp4">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://novatech.com/">
@@ -109,12 +120,20 @@
             <!-- Gradiente base -->
             <div class="absolute inset-0 bg-gradient-to-br from-[rgb(76,46,213)] via-[rgb(76,46,213)] via-30% to-[rgb(133,40,230)]"></div>
             
-            <!-- Imagen con efecto de opacidad -->
-            <div class="hero-image-wrapper">
-                <img src="images/hero-1.png" alt="Automatización" class="hero-image fade-image" data-index="1">
-                <img src="images/hero-2.png" alt="Automatización" class="hero-image fade-image" data-index="2">
-                <img src="images/hero-3.png" alt="Automatización" class="hero-image fade-image" data-index="3">
-                <!--<img src="images/hero-4.png" alt="Automatización" class="hero-image fade-image" data-index="4">-->
+            <!-- Imagen del hero con rotación automática -->
+            <div class="relative w-full h-full overflow-hidden">
+                <img src="images/hero-1.png" alt="Automatización empresarial" 
+                     class="hero-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+                     data-src="images/hero-1.png">
+                <img src="images/hero-2.png" alt="Inteligencia artificial" 
+                     class="hero-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+                     data-src="images/hero-2.png">
+                <img src="images/hero-3.png" alt="Procesos automatizados" 
+                     class="hero-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+                     data-src="images/hero-3.png">
+                
+                <!-- Overlay con gradiente para mejorar legibilidad del texto -->
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-900/30 via-blue-800/20 to-transparent"></div>
             </div>
 
             <!-- Contenido -->

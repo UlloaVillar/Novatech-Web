@@ -164,27 +164,65 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 });
 
-// Rotación de imágenes del hero
-function rotateHeroImages() {
-    const images = document.querySelectorAll('.fade-image');
-    let currentIndex = 1;
-    const totalImages = images.length;
+// Preload inteligente de imágenes críticas
+function preloadCriticalImages() {
+    const criticalImages = [
+        'images/hero-1.png',
+        'images/hero-2.png', 
+        'images/hero-3.png',
+        'images/Group-9.png',
+        'images/Group-8.png'
+    ];
+    
+    criticalImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+}
 
-    setInterval(() => {
-        images.forEach(img => {
+// Sistema de rotación de imágenes del hero optimizado
+function setupHeroImageRotation() {
+    const heroImages = document.querySelectorAll('.hero-image');
+    if (heroImages.length === 0) return;
+    
+    let currentIndex = 0;
+    const totalImages = heroImages.length;
+    
+    // Asegurar que la primera imagen esté visible
+    heroImages.forEach((img, index) => {
+        if (index === 0) {
+            img.style.opacity = '1';
+        } else {
             img.style.opacity = '0';
-        });
-        
-        const nextImage = document.querySelector(`.fade-image[data-index="${currentIndex}"]`);
-        if (nextImage) {
-            nextImage.style.opacity = '0.85';
         }
+    });
+    
+    function rotateImages() {
+        // Ocultar imagen actual
+        heroImages[currentIndex].style.opacity = '0';
         
-        currentIndex = currentIndex >= totalImages ? 1 : currentIndex + 1;
-    }, 3500); // Cambia cada 3.5 segundos
+        // Siguiente imagen
+        currentIndex = (currentIndex + 1) % totalImages;
+        
+        // Mostrar nueva imagen
+        heroImages[currentIndex].style.opacity = '1';
+    }
+    
+    // Rotar cada 5 segundos
+    setInterval(rotateImages, 5000);
 }
 
 // Iniciar la rotación cuando el documento esté listo
 document.addEventListener('DOMContentLoaded', () => {
-    rotateHeroImages();
+    // Preload de imágenes críticas para mejorar performance
+    preloadCriticalImages();
+    
+    // Configurar rotación de imágenes del hero
+    setupHeroImageRotation();
+    
+    // Configurar videos
+    setupVideos();
+    
+    // Configurar tabs
+    activateTab('excels');
 }); 
