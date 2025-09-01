@@ -93,9 +93,8 @@
     <!-- Header -->
     <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <nav class="container mx-auto px-8 py-6 flex justify-between items-center">
-            <a href="/" class="flex items-center space-x-3">
+            <a href="/" class="flex items-center">
                 <img src="images/Group-9.png" alt="Novatech" class="h-10">
-                <span class="text-xl font-medium">Novatech</span>
             </a>
             <a href="#contact" class="text-apple-dark border border-gray-300 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors">
                 Contactar
@@ -104,7 +103,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-40 pb-32 px-8">
+    <section class="pt-40 pb-20 px-8">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-light mb-8 leading-tight">
                 AI Boutique Agency
@@ -123,8 +122,6 @@
             </div>
         </div>
     </section>
-
-    <div class="section-divider"></div>
 
     <!-- Quiénes Somos -->
     <section id="about" class="py-20 px-8">
@@ -149,38 +146,9 @@
                 </div>
             </div>
             
-            <div class="p-8 bg-elegant-gray rounded-xl">
-                <p class="text-lg font-medium">
-                    Preferimos 5 clientes transformados que 50 experimentos sin impacto.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- Por qué Ahora -->
-    <section class="py-20 px-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-light mb-12">Por qué Ahora</h2>
-            <p class="text-xl mb-12 leading-relaxed">
-                La IA es el relevo generacional de esta década.
+            <p class="text-lg font-medium">
+                Preferimos 5 clientes transformados que 50 experimentos sin impacto.
             </p>
-            <div class="grid md:grid-cols-2 gap-12 mb-12">
-                <div class="p-8 border border-gray-200 rounded-xl">
-                    <h3 class="text-xl font-medium mb-3">Los que implementan hoy</h3>
-                    <p class="text-lg text-text-muted">Lideran mañana.</p>
-                </div>
-                <div class="p-8 border border-gray-200 rounded-xl">
-                    <h3 class="text-xl font-medium mb-3">Los que esperan</h3>
-                    <p class="text-lg text-text-muted">Pagan más caro y se quedan atrás.</p>
-                </div>
-            </div>
-            <div class="p-8 bg-red-50 border border-red-200 rounded-xl">
-                <p class="text-lg font-medium text-red-800">
-                    El tren de la IA no va a esperar. Es ahora o nunca.
-                </p>
-            </div>
         </div>
     </section>
 
@@ -188,71 +156,94 @@
 
     <!-- Soluciones -->
     <section id="solutions" class="py-20 px-8">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-light mb-12">Soluciones que Ofrecemos</h2>
-            <p class="text-lg text-text-muted mb-16 max-w-3xl">
+            <p class="text-lg text-text-muted mb-16">
                 Soluciones específicas diseñadas para generar ROI medible
             </p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift flex flex-col">
                     <h3 class="text-xl font-medium mb-4">AI Stock Manager</h3>
-                    <p class="text-text-muted mb-6">Controla inventario, previene pérdidas, conecta Excel, Shopify y ERP.</p>
-                    <div class="p-4 bg-green-50 rounded-lg">
+                    <p class="text-text-muted mb-6 flex-grow">Controla inventario, previene pérdidas, conecta Excel, Shopify y ERP.</p>
+                    <div class="p-4 bg-green-50 rounded-lg mt-auto">
                         <p class="text-sm font-medium text-green-800">
                             Ahorro esperado: 20k–50k€/año en stock y compras innecesarias.
                         </p>
                     </div>
                 </div>
                 
-                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift flex flex-col">
                     <h3 class="text-xl font-medium mb-4">AI Finance Assistant</h3>
-                    <p class="text-text-muted mb-6">Centraliza ventas, gastos y bancos. Reportes en tiempo real + alertas de cashflow.</p>
-                    <div class="p-4 bg-blue-50 rounded-lg">
+                    <p class="text-text-muted mb-6 flex-grow">Centraliza ventas, gastos y bancos. Reportes en tiempo real + alertas de cashflow.</p>
+                    <div class="p-4 bg-blue-50 rounded-lg mt-auto">
                         <p class="text-sm font-medium text-blue-800">
                             Más control financiero sin depender de analistas internos.
                         </p>
                     </div>
                 </div>
                 
-                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift flex flex-col">
                     <h3 class="text-xl font-medium mb-4">AI Customer Care</h3>
-                    <p class="text-text-muted mb-6">Base de conocimiento + agente 24/7 que resuelve tickets, emails y chats.</p>
-                    <div class="p-4 bg-purple-50 rounded-lg">
+                    <p class="text-text-muted mb-6 flex-grow">Base de conocimiento + agente 24/7 que resuelve tickets, emails y chats.</p>
+                    <div class="p-4 bg-purple-50 rounded-lg mt-auto">
                         <p class="text-sm font-medium text-purple-800">
                             Reducción de costes en soporte y mejora en la experiencia del cliente.
                         </p>
                     </div>
                 </div>
                 
-                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift flex flex-col">
                     <h3 class="text-xl font-medium mb-4">AI Knowledge Hub</h3>
-                    <p class="text-text-muted mb-6">Para industrias con documentación técnica y maquinaria. Historial de errores + soluciones siempre disponible.</p>
-                    <div class="p-4 bg-orange-50 rounded-lg">
+                    <p class="text-text-muted mb-6 flex-grow">Para industrias con documentación técnica y maquinaria. Historial de errores + soluciones siempre disponible.</p>
+                    <div class="p-4 bg-orange-50 rounded-lg mt-auto">
                         <p class="text-sm font-medium text-orange-800">
                             Menos tiempo perdido en formación y soporte técnico.
                         </p>
                     </div>
                 </div>
                 
-                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift flex flex-col">
                     <h3 class="text-xl font-medium mb-4">AI Content Engine</h3>
-                    <p class="text-text-muted mb-6">Genera contenido (texto, imagen, video) para SEO y redes sociales a partir de tus productos.</p>
-                    <div class="p-4 bg-pink-50 rounded-lg">
+                    <p class="text-text-muted mb-6 flex-grow">Genera contenido (texto, imagen, video) para SEO y redes sociales a partir de tus productos.</p>
+                    <div class="p-4 bg-pink-50 rounded-lg mt-auto">
                         <p class="text-sm font-medium text-pink-800">
                             Reducción del 70% en costes de marketing y contenido.
                         </p>
                     </div>
                 </div>
                 
-                <div class="p-8 border-2 border-dashed border-gray-300 rounded-xl hover-lift">
+                <div class="p-8 border-2 border-dashed border-gray-300 rounded-xl hover-lift flex flex-col">
                     <h3 class="text-xl font-medium mb-4">Custom Solutions</h3>
-                    <p class="text-text-muted mb-6">Si tu empresa tiene un proceso lento, caro o manual → lo analizamos y construimos un sistema de IA custom.</p>
-                    <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="text-text-muted mb-6 flex-grow">Si tu empresa tiene un proceso lento, caro o manual → lo analizamos y construimos un sistema de IA custom.</p>
+                    <div class="p-4 bg-gray-50 rounded-lg mt-auto">
                         <p class="text-sm font-medium text-gray-800">
                             Nuestro trabajo no es venderte un producto cerrado, es liberar tu negocio de fricciones con la IA.
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Cómo Trabajamos -->
+    <section class="py-20 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-light mb-12">Cómo Trabajamos</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Trabajamos en batches limitados</h3>
+                    <p class="text-text-muted">Elegimos clientes donde haya impacto real y medible.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">No hacemos proyectos por moda</h3>
+                    <p class="text-text-muted">Cada solución debe generar resultados tangibles.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Exclusivos pero accesibles</h3>
+                    <p class="text-text-muted">Si tu negocio tiene potencial, somos tu partner ideal.</p>
                 </div>
             </div>
         </div>
@@ -281,32 +272,19 @@
                     <p class="text-text-muted">Nuestros proyectos se diseñan en fases. Se empieza con un piloto → si da resultado, se escala.</p>
                 </div>
                 
-                <div class="pb-8">
+                <div class="border-b border-gray-200 pb-8">
                     <h3 class="text-xl font-medium mb-3">¿Cuánto tarda?</h3>
                     <p class="text-text-muted">Entre 2 y 6 semanas, dependiendo de la complejidad.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- Cómo Trabajamos -->
-    <section class="py-20 px-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-light mb-12">Cómo Trabajamos</h2>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div>
-                    <h3 class="text-xl font-medium mb-4">Trabajamos en batches limitados</h3>
-                    <p class="text-text-muted">Elegimos clientes donde haya impacto real y medible.</p>
+                
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-medium mb-3">¿Por qué implementar IA ahora?</h3>
+                    <p class="text-text-muted">La IA es el relevo generacional de esta década. Los que implementan hoy lideran mañana. Los que esperan pagan más caro y se quedan atrás. El tren de la IA no va a esperar.</p>
                 </div>
-                <div>
-                    <h3 class="text-xl font-medium mb-4">No hacemos proyectos por moda</h3>
-                    <p class="text-text-muted">Cada solución debe generar resultados tangibles.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-medium mb-4">Exclusivos pero accesibles</h3>
-                    <p class="text-text-muted">Si tu negocio tiene potencial, somos tu partner ideal.</p>
+                
+                <div class="pb-8">
+                    <h3 class="text-xl font-medium mb-3">¿Qué nos diferencia?</h3>
+                    <p class="text-text-muted">No hacemos "IA genérica". Seleccionamos proyectos donde la inteligencia artificial puede generar un ROI claro y transformador. Preferimos 5 clientes transformados que 50 experimentos sin impacto.</p>
                 </div>
             </div>
         </div>
