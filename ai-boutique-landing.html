@@ -307,7 +307,7 @@
                 Some businesses will adapt and grow. Others will fall behind.
             </p>
             <div class="p-12 bg-elegant-gray rounded-xl mb-12">
-                <a href="mailto:contacto@novatech.com" class="inline-block bg-apple-dark text-white px-12 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
+                <a href="#" onclick="sendEmail()" class="inline-block bg-apple-dark text-white px-12 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
                     Start Project
                 </a>
             </div>
@@ -331,6 +331,14 @@
     </footer>
 
     <script>
+        // Función para enviar email de forma segura
+        function sendEmail() {
+            const user = 'ulloa';
+            const domain = 'novatechs.es';
+            const email = user + '@' + domain;
+            window.location.href = 'mailto:' + email;
+        }
+
         // Animación de fade-in al hacer scroll
         const observerOptions = {
             threshold: 0.1,
