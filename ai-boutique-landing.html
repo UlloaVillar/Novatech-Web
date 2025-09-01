@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Boutique Agency & Consultancy - Transformamos problemas complejos en soluciones de IA que generan impacto real. No hacemos IA genérica, seleccionamos proyectos donde la inteligencia artificial puede generar un ROI claro y transformador.">
+    <meta name="keywords" content="AI boutique agency, inteligencia artificial, consultoría IA, automatización empresarial, ROI IA, transformación digital">
+    <title>AI Boutique Agency & Consultancy | Novatech</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Group-9.png">
+    <link rel="apple-touch-icon" href="images/Group-9.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://novatech.com/">
+    <meta property="og:title" content="AI Boutique Agency & Consultancy | Novatech">
+    <meta property="og:description" content="Transformamos problemas complejos en soluciones de IA que generan impacto real. No hacemos IA genérica.">
+    <meta property="og:image" content="images/Group-9.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://novatech.com/">
+    <meta property="twitter:title" content="AI Boutique Agency & Consultancy | Novatech">
+    <meta property="twitter:description" content="Transformamos problemas complejos en soluciones de IA que generan impacto real.">
+    <meta property="twitter:image" content="images/Group-9.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-gray': '#f5f5f7',
+                        'apple-dark': '#1d1d1f',
+                        'apple-blue': '#0071e3',
+                        'apple-text': '#86868b',
+                        'elegant-gray': '#f8f9fa',
+                        'text-muted': '#6c757d',
+                    },
+                    fontFamily: {
+                        'sf': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1d1d1f 0%, #86868b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: #e9ecef;
+            margin: 4rem 0;
+        }
+        
+        .hover-lift {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-apple-dark">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav class="container mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-3">
+                <img src="images/Group-9.png" alt="Novatech" class="h-10">
+                <span class="text-xl font-medium">Novatech</span>
+            </a>
+            <a href="#contact" class="text-apple-dark border border-gray-300 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors">
+                Contactar
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-32 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-light mb-8 leading-tight">
+                AI Boutique Agency
+                <br><span class="font-normal">& Consultancy</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-text-muted mb-12 leading-relaxed max-w-3xl">
+                Transformamos problemas complejos en soluciones de IA que generan impacto real.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#solutions" class="bg-apple-dark text-white px-8 py-3 rounded-lg text-lg hover:bg-gray-800 transition-colors">
+                    Ver Soluciones
+                </a>
+                <a href="#about" class="text-apple-dark border border-gray-300 px-8 py-3 rounded-lg text-lg hover:bg-gray-50 transition-colors">
+                    Conocer Más
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Quiénes Somos -->
+    <section id="about" class="py-20 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-light mb-12">Quiénes Somos</h2>
+            <p class="text-lg text-text-muted mb-16 leading-relaxed">
+                En Novatech no hacemos "IA genérica". Somos una AI Boutique Agency: seleccionamos proyectos donde la inteligencia artificial puede generar un ROI claro y transformador.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Analizamos</h3>
+                    <p class="text-text-muted">Tus procesos y detectamos cuellos de botella.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Diseñamos</h3>
+                    <p class="text-text-muted">Una solución de IA customizada a tu negocio.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Implementamos</h3>
+                    <p class="text-text-muted">Y acompañamos hasta que la solución dé resultados medibles.</p>
+                </div>
+            </div>
+            
+            <div class="p-8 bg-elegant-gray rounded-xl">
+                <p class="text-lg font-medium">
+                    Preferimos 5 clientes transformados que 50 experimentos sin impacto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Por qué Ahora -->
+    <section class="py-20 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-light mb-12">Por qué Ahora</h2>
+            <p class="text-xl mb-12 leading-relaxed">
+                La IA es el relevo generacional de esta década.
+            </p>
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div class="p-8 border border-gray-200 rounded-xl">
+                    <h3 class="text-xl font-medium mb-3">Los que implementan hoy</h3>
+                    <p class="text-lg text-text-muted">Lideran mañana.</p>
+                </div>
+                <div class="p-8 border border-gray-200 rounded-xl">
+                    <h3 class="text-xl font-medium mb-3">Los que esperan</h3>
+                    <p class="text-lg text-text-muted">Pagan más caro y se quedan atrás.</p>
+                </div>
+            </div>
+            <div class="p-8 bg-red-50 border border-red-200 rounded-xl">
+                <p class="text-lg font-medium text-red-800">
+                    El tren de la IA no va a esperar. Es ahora o nunca.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Soluciones -->
+    <section id="solutions" class="py-20 px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-light mb-12">Soluciones que Ofrecemos</h2>
+            <p class="text-lg text-text-muted mb-16 max-w-3xl">
+                Soluciones específicas diseñadas para generar ROI medible
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                    <h3 class="text-xl font-medium mb-4">AI Stock Manager</h3>
+                    <p class="text-text-muted mb-6">Controla inventario, previene pérdidas, conecta Excel, Shopify y ERP.</p>
+                    <div class="p-4 bg-green-50 rounded-lg">
+                        <p class="text-sm font-medium text-green-800">
+                            Ahorro esperado: 20k–50k€/año en stock y compras innecesarias.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                    <h3 class="text-xl font-medium mb-4">AI Finance Assistant</h3>
+                    <p class="text-text-muted mb-6">Centraliza ventas, gastos y bancos. Reportes en tiempo real + alertas de cashflow.</p>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <p class="text-sm font-medium text-blue-800">
+                            Más control financiero sin depender de analistas internos.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                    <h3 class="text-xl font-medium mb-4">AI Customer Care</h3>
+                    <p class="text-text-muted mb-6">Base de conocimiento + agente 24/7 que resuelve tickets, emails y chats.</p>
+                    <div class="p-4 bg-purple-50 rounded-lg">
+                        <p class="text-sm font-medium text-purple-800">
+                            Reducción de costes en soporte y mejora en la experiencia del cliente.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                    <h3 class="text-xl font-medium mb-4">AI Knowledge Hub</h3>
+                    <p class="text-text-muted mb-6">Para industrias con documentación técnica y maquinaria. Historial de errores + soluciones siempre disponible.</p>
+                    <div class="p-4 bg-orange-50 rounded-lg">
+                        <p class="text-sm font-medium text-orange-800">
+                            Menos tiempo perdido en formación y soporte técnico.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="p-8 border border-gray-200 rounded-xl hover-lift">
+                    <h3 class="text-xl font-medium mb-4">AI Content Engine</h3>
+                    <p class="text-text-muted mb-6">Genera contenido (texto, imagen, video) para SEO y redes sociales a partir de tus productos.</p>
+                    <div class="p-4 bg-pink-50 rounded-lg">
+                        <p class="text-sm font-medium text-pink-800">
+                            Reducción del 70% en costes de marketing y contenido.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="p-8 border-2 border-dashed border-gray-300 rounded-xl hover-lift">
+                    <h3 class="text-xl font-medium mb-4">Custom Solutions</h3>
+                    <p class="text-text-muted mb-6">Si tu empresa tiene un proceso lento, caro o manual → lo analizamos y construimos un sistema de IA custom.</p>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <p class="text-sm font-medium text-gray-800">
+                            Nuestro trabajo no es venderte un producto cerrado, es liberar tu negocio de fricciones con la IA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- FAQ -->
+    <section class="py-20 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-light mb-12">Preguntas Frecuentes</h2>
+            
+            <div class="space-y-8">
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-medium mb-3">¿Es seguro?</h3>
+                    <p class="text-text-muted">Sí. Trabajamos con sistemas privados y datos en entornos seguros.</p>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-medium mb-3">¿Es caro?</h3>
+                    <p class="text-text-muted">El coste depende del impacto. Un error de stock puede costar 20.000€. Nuestra solución cuesta mucho menos que ese problema.</p>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-medium mb-3">¿Y si no funciona?</h3>
+                    <p class="text-text-muted">Nuestros proyectos se diseñan en fases. Se empieza con un piloto → si da resultado, se escala.</p>
+                </div>
+                
+                <div class="pb-8">
+                    <h3 class="text-xl font-medium mb-3">¿Cuánto tarda?</h3>
+                    <p class="text-text-muted">Entre 2 y 6 semanas, dependiendo de la complejidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Cómo Trabajamos -->
+    <section class="py-20 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-light mb-12">Cómo Trabajamos</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Trabajamos en batches limitados</h3>
+                    <p class="text-text-muted">Elegimos clientes donde haya impacto real y medible.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">No hacemos proyectos por moda</h3>
+                    <p class="text-text-muted">Cada solución debe generar resultados tangibles.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Exclusivos pero accesibles</h3>
+                    <p class="text-text-muted">Si tu negocio tiene potencial, somos tu partner ideal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CTA Final -->
+    <section id="contact" class="py-20 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-light mb-8">La Revolución Ya Empezó</h2>
+            <p class="text-xl mb-12 leading-relaxed">
+                Algunos negocios se adaptarán y crecerán. Otros quedarán atrás.
+            </p>
+            <div class="p-12 bg-elegant-gray rounded-xl mb-12">
+                <p class="text-xl font-medium mb-8">
+                    ¿Quieres ser de los que lideran el cambio o de los que lo ven pasar?
+                </p>
+                <a href="mailto:contacto@novatech.com" class="inline-block bg-apple-dark text-white px-12 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
+                    Iniciar Proyecto
+                </a>
+            </div>
+            
+            <div class="text-center">
+                <img src="images/Group-9.png" alt="Novatech" class="h-12 mx-auto mb-4">
+                <p class="text-text-muted">
+                    <strong>Novatech</strong> – AI Boutique Agency
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-8 bg-apple-dark text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-text-muted">
+                © 2024 Novatech. Transformando negocios con IA que genera impacto real.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Animación de fade-in al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
