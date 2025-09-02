@@ -112,19 +112,8 @@
         }
         
         .flag {
-            width: 20px;
-            height: 15px;
-            border-radius: 2px;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .flag-es {
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15"><rect width="20" height="15" fill="%23C60B1E"/><rect width="20" height="5" fill="%23FFC400"/><rect y="10" width="20" height="5" fill="%23FFC400"/></svg>');
-        }
-        
-        .flag-en {
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15"><rect width="20" height="15" fill="%23012169"/><g fill="%23FFFFFF"><path d="M0 0h20v1.5H0zM0 2.5h20v1H0zM0 5h20v1H0zM0 7.5h20v1H0zM0 10h20v1H0zM0 12.5h20v1H0zM0 14h20v1H0z"/><path d="M0 0h8v8H0z"/><path d="M0 0h1.5v8H0zM3 0h1v8H3zM6 0h1v8H6zM0 0h8v1.5H0zM0 3h8v1H0zM0 6h8v1H0z"/></g></svg>');
+            font-size: 16px;
+            line-height: 1;
         }
     </style>
 </head>
@@ -138,8 +127,8 @@
             <div class="flex items-center gap-4">
                 <div class="language-selector">
                     <div class="language-toggle" onclick="toggleLanguage()">
-                        <div class="flag flag-en"></div>
-                        <span class="text-sm font-medium">EN</span>
+                        <span class="flag">🇪🇸</span>
+                        <span class="text-sm font-medium">ES</span>
                     </div>
                 </div>
                 <a href="#contact" class="text-apple-dark border border-gray-300 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors">
